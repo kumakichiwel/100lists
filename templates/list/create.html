@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load staticfiles %}
+{% block content %}
+
+
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-10 col-xs-10" id="banner">
+                <h3>New</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-2 col-md-1 col-sm-1 col-xs-1">
+            </div>
+            <div class="col-lg-8 col-md-10 col-sm-10 col-xs-10">
+                <div class="well bs-component">
+                    <form class="form-horizontal" action="{% url 'list:create' %}" method="POST" enctype="multipart/form-data" autocomplete="off">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">{{ form.title.label_tag }}</label>
+                            <div class="col-sm-8">{{form.title|add_class:"form-control"}}</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">{{ form.content.label_tag }}</label>
+                            <div class="col-sm-8" id="textarea_size">{{form.content|add_class:"textarea_size form-control"}}</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 col-md-2 col-sm-2 col-xs-10 control-label">{{ form.due_date.label_tag }}</label>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-8">{{form.due_date|add_class:"form-control"}}</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 col-md-2 col-sm-2 col-xs-10 control-label">{{ form.rank.label_tag }}</label>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-8">{{form.rank|add_class:"form-control"}}</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label">{{ form.image.label_tag }}</label>
+                            <div class="col-lg-8 col-md-10 col-sm-10 col-xs-10">{{form.image|add_class:"form-control"}}</div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-right">送信</button>
+                            <a href="{% url 'list:index' %}" class="btn btn-secondary btn-right">戻る</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-1 col-sm-1 col-xs-1">
+            </div>
+        </div>
+    </div>
+</div>
+                            
+
+{% endblock %}

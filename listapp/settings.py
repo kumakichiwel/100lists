@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'list.apps.ListConfig',
     'accounts.apps.AccountsConfig',
+    'widget_tweaks',
+    'bootstrap_datepicker_plus',
+    'imagekit',
+    'django_cleanup',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +128,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 
 try:
     from .local_settings import *
@@ -133,3 +140,6 @@ except ImportError:
 if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
+
+
+

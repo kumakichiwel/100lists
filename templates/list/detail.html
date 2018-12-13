@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" id="banner">
+                <h3>{{ list_val.title }}</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-2 col-sm-1 col-xs-1">
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-9 col-xs-9">
+                {% if not list_val.image %}
+                
+                {% else %}
+                    <img src="{{ list_val.image_edit.url }}" class="img-responsive">
+                {% endif %}
+                
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="lead">
+                            Content:
+                        </p>
+                        <p>{{ list_val.content }}</p><hr>
+                        <p>Due Date : {{ list_val.due_date }}</p>
+                        {% if list_val.rank == 1 %}
+                            <p>Rank : A（最優先でやる）</p>
+                        {% elif list_val.rank == 2 %}
+                            <p>Rank : B（そのうちやる）</p>
+                        {% else %}
+                            <p>Rank : C（いつかやる）</p>
+                        {% endif %}
+                        <p> created at : {{ list_val.created_at }}</p>
+                        <a href="{% url 'list:update' pk=list_val.id %}" class="btn btn-primary btn-right">編集</a>
+                        <a href="{% url 'list:delete' pk=list_val.id %}" class="btn btn-danger btn-right" onclick='return confirm("削除してよろしいですか？");'>削除</a>
+                        <a href="{% url 'list:index' %}" class="btn btn-secondary btn-right">戻る</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-md-2 col-sm-1 col-xs-1">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

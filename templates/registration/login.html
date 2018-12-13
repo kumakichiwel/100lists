@@ -1,9 +1,10 @@
-{% extends "base.html" %}
- 
+{% extends 'base_login.html' %}
+{% load widget_tweaks %}
+
 {% block content %}
  
 {% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
+<p>ユーザ名もしくはパスワードが一致しません。もう一度お試しください。</p>
 {% endif %}
  
 {% if next %}
@@ -15,7 +16,7 @@
     {% endif %}
 {% endif %}
  
-<form method="post" action="{% url 'login' %}">
+<form method="post" action="{% url 'login' %}" autocomplete="off">
 {% csrf_token %}
 <table>
 <tr>
