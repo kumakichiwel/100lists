@@ -40,9 +40,38 @@
                         <a href="{% url 'list:delete' pk=list_val.id %}" class="btn btn-danger btn-right" onclick='return confirm("削除してよろしいですか？");'>削除</a>
                         <a href="{% url 'list:index' %}" class="btn btn-secondary btn-right">戻る</a>
                     </div>
-                    
                 </div>
                 
+                {% for v in comment_val %}
+                    <div class="box26">
+                        <span class="box-title">
+                            {{ v.created_at }}
+                            {% if user.id == list_val.user_id %}
+                                <a href="{% url 'list:delete_comment' pk=v.id id=list_val.id%}" class="btn btn-danger btn-xs" onclick='return confirm("削除してよろしいですか？");'>削除</a>
+                            {% endif %}
+                            </span>
+                        <p>{{ v.comment }}</p>
+                    </div>
+                {% empty %}
+                    <p>コメントはありません</p>
+                {% endfor %}
+
+                {% if user.id == list_val.user_id %}
+                    <form class="form-horizontal" action="{% url 'list:create_comment' pk=list_val.id %}" method="POST" autocomplete="off">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label class="col-lg-2 col-md-2 col-sm-2 col-xs-2 control-label">{{ form.comment.label_tag }}</label>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="comment_textarea_size">{{form.comment|add_class:"form-control"}}<p class="small_text">※自分のみ投稿できます。</p></div>
+
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-right">投稿</button>
+                        </div>
+                    </form>
+                    
+                {% else %}
+                    
+                {% endif %}                
             </div>
             <div class="col-lg-3 col-md-2 col-sm-1 col-xs-1">
             </div>

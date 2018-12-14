@@ -2,8 +2,9 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 
-from .forms import ListForm
-from .models import List
+from .forms import ListForm, CommentForm
+from .models import List, Comment
+
 
 @login_required
 def index(request):
@@ -13,7 +14,9 @@ def index(request):
  
 def detail(request, pk):
     list_val = List.objects.get(id=pk)
-    return render(request, 'list/detail.html', {'list_val':list_val})
+    comment_val = Comment.objects.filter(list_id=pk)
+    form = CommentForm()
+    return render(request, 'list/detail.html', {'list_val':list_val, 'comment_val':comment_val, 'form':form })
 
  
 def create(request):
@@ -52,12 +55,23 @@ def update(request, pk):
                 'image':list.image
             }
         )
-        print("+++++++;")
-        print(list.image_edit)
     return render(request, 'list/update.html', {'form':form, 'pk':pk, 'image_edit':list.image_edit})   
 
  
 def delete(request, pk):
     List.objects.get(pk=pk).delete()
     return redirect('list:index')
-    
+
+
+def create_comment(request, pk):
+    form = CommentForm(request.POST)
+    if form.is_valid():
+        Comment = form.save(commit=False)
+        Comment.list_id = pk
+        Comment.save()
+    return redirect('list:detail', pk=pk)
+
+
+def delete_comment(request, pk, id):
+    Comment.objects.get(pk=pk).delete()
+    return redirect('list:detail', pk=id)

@@ -1,0 +1,72 @@
+.small_text {
+    font-size: 14px;
+    color: #808080;
+}
+.box26 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 1px #dcdcdc;
+    border-radius: 8px;
+}
+.box26 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 14px;
+    background: #FFF;
+    color: #808080;
+    font-weight: bold;
+}
+.box26 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.awe_cust {
+    color: #3b9ae0;
+}
+.list_heading a {
+    display:block;
+    width: 100%;
+    text-decoration: none;
+    margin: 7px 0px;
+    color:black;
+}
+.list_heading2 a {
+    display:block;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;/*文字色*/
+    border: solid 2px #3b9ae0;/*線色*/
+    padding: 0.5em;/*文字周りの余白*/
+    border-radius: 0.5em;/*角丸*/
+    margin: 7px 0px;
+}
+.list_heading2 a:hover {
+    background-color: #e6e6fa;
+}
+.list_created_at{
+    font-size: 11px;
+    colot:#dcdcdc;
+    padding:0px 10px 0px 5px;
+    display: inline;
+    float: right;
+}
+.textarea_size {
+    line-height: 20px;
+    max-height: 200px;
+}
+.btn-right{
+    float:right;
+    margin:0px 10px;
+}
+.form-control[disabled],
+.form-control[readonly],
+.form-control fieldset[disabled] {
+    background-color: #fff !important;
+    opacity: 1;
+}

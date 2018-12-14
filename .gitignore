@@ -6,3 +6,4 @@ db.sqlite3
 listapp.sublime-project
 listapp.sublime-workspace
 *.jpg
+media/

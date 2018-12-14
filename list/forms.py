@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import ModelForm
-from .models import List
+from .models import List, Comment
 
 
 class ListForm(forms.ModelForm):
@@ -24,3 +24,11 @@ class ListForm(forms.ModelForm):
     due_date = forms.DateTimeField(),
     rank = forms.ChoiceField(choices=choice_list, initial=1)
     image = forms.ImageField(required = False)
+
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ('comment',)
+
+    comment = forms.Textarea(),
