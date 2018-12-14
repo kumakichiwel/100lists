@@ -25,7 +25,9 @@
     margin: 0; 
     padding: 0;
 }
-
+.awe_crown {
+    color: #ffd700;
+}
 .awe_cust {
     color: #3b9ae0;
 }

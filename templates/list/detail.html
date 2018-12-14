@@ -7,7 +7,19 @@
     <div class="content">
         <div class="row">
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" id="banner">
-                <h3>{{ list_val.title }}</h3>
+                <h3>
+                    {% if user.id == list_val.user_id %}
+                        {% if list_val.status == True %}
+                            <i class="fas fa-crown awe_crown"></i>{{ list_val.title }}
+                            <a href="{% url 'list:status_update' pk=list_val.id %}" class="btn btn-danger btn-right">実行中にする</a>
+                        {% else %}
+                            {{ list_val.title }}
+                            <a href="{% url 'list:status_update' pk=list_val.id %}" class="btn btn-primary btn-right">達成済にする</a>
+                        {% endif %}
+                    {% else %}
+                        {{ list_val.title }}
+                    {% endif %}
+                </h3>
             </div>
         </div>
 
@@ -68,10 +80,9 @@
                             <button type="submit" class="btn btn-primary btn-right">投稿</button>
                         </div>
                     </form>
-                    
                 {% else %}
                     
-                {% endif %}                
+                {% endif %}           
             </div>
             <div class="col-lg-3 col-md-2 col-sm-1 col-xs-1">
             </div>

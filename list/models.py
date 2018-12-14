@@ -54,6 +54,9 @@ class List(models.Model):
         format='JPEG'
     )
 
+    ## 達成ステータス（True：達成済み、False：実行中）
+    status = models.BooleanField(default=False)
+
 
     def __str__(self):
         return self.title

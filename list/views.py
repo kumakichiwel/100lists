@@ -75,3 +75,14 @@ def create_comment(request, pk):
 def delete_comment(request, pk, id):
     Comment.objects.get(pk=pk).delete()
     return redirect('list:detail', pk=id)
+
+
+def status_update(request, pk):
+    list = get_object_or_404(List, id=pk)
+    if list.status == False:
+        list.status = True
+    else:
+        list.status = False
+    list.save()
+    return redirect('list:index')
+
