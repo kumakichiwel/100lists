@@ -90,6 +90,21 @@ def status_update(request, pk):
 
 
 def others_list(request):
-    lists = List.objects.filter(share=1).exclude(user_id=request.user.id).order_by('created_at')[:10]
+    lists = List.objects.filter(share=1).exclude(user_id=request.user.id).order_by('created_at')[:20]
     return render(request, 'list/others.html', {'lists':lists})
 
+
+def share_open(request):
+    user_lists = List.objects.filter(user__id=request.user.id)
+    for v in user_lists:
+        v.share = 1
+        v.save()
+    return redirect('accounts:index')
+
+
+def share_close(request):
+    user_lists = List.objects.filter(user__id=request.user.id)
+    for v in user_lists:
+        v.share = 2
+        v.save()
+    return redirect('accounts:index')

@@ -1,3 +1,7 @@
+.button_area {
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
 .profile_box {
     margin-top: 20px;
 }
@@ -5,6 +9,9 @@
     text-align:center;
     height:150;
     width:150;
+}
+.profile_social{
+    vertical-align: middle;
 }
 .image-round1{
     border-radius: 50%;
@@ -43,6 +50,9 @@
 }
 .awe_cust {
     color: #3b9ae0;
+}
+.awe_profile_img {
+    color: #d3d3d3;
 }
 .list_heading a {
     display:block;

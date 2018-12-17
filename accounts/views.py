@@ -18,12 +18,17 @@ def index(request):
         return render(request, 'accounts/create_profile.html', {'form':form})
 
 
+def detail(request, pk):
+    profile = get_object_or_404(Profile, id=pk)
+    pass
+
+
 def create(request):
     form = ProfileForm(request.POST, request.FILES)
     if form.is_valid():
-        List = form.save(commit=False)
-        List.user_id = request.user.id
-        List.save()
+        profile = form.save(commit=False)
+        profile.user_id = request.user.id
+        profile.save()
     return redirect('list:index')
 
 
@@ -36,6 +41,7 @@ def update(request, pk):
             profile.name = form.cleaned_data['name']
             profile.profile_image = form.cleaned_data['profile_image']
             profile.profile_content = form.cleaned_data['profile_content']
+            profile.twitter = form.cleaned_data['twitter']
             profile.save()
             return redirect('accounts:index')
     else:
@@ -44,6 +50,7 @@ def update(request, pk):
                 'name':profile.name,
                 'profile_image':profile.profile_image,
                 'profile_content':profile.profile_content,
+                'twitter':profile.twitter,
             }
         )
     return render(request, 'accounts/update.html', {'form':form, 'pk':pk })   
@@ -52,4 +59,6 @@ def update(request, pk):
 class SignUpView(generic.CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('login')
+    #success_url = reverse_lazy('accounts:create')
     template_name = 'accounts/signup.html'
+

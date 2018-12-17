@@ -16,10 +16,7 @@ class List(models.Model):
     content = models.TextField()
 
     ## 期日
-    due_date = models.DateField(
-        blank=True,
-        null=True,
-    )
+    due_date = models.DateField(blank=True, null=True)
 
     ## カテゴリー
     ## 今後実装
@@ -56,6 +53,7 @@ class List(models.Model):
 
     def __str__(self):
         return self.title
+
 
 class Comment(models.Model):
     class Meta:

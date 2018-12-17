@@ -26,7 +26,7 @@ class ListForm(forms.ModelForm):
 
     title = forms.TextInput(attrs={'placeholder': 'Enter description here', 'size': 40})
     content = forms.Textarea(attrs={'cols': 20, 'rows': 2})
-    due_date = forms.DateTimeField()
+    due_date = forms.DateTimeField(required=False)
     rank = forms.ChoiceField(choices=choice_list_rank, initial=1)
     image = forms.ImageField(required = False)
     share = forms.ChoiceField(choices=choice_list_share, initial=2)

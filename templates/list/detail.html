@@ -39,6 +39,9 @@
                             Content:
                         </p>
                         <p>{{ list_val.content }}</p><hr>
+                        {% if user.id != list_val.user_id %}
+                            <p>User : {{ list_val.user.profile.name }}</p>
+                        {% endif %}
                         <p>Due Date : {{ list_val.due_date }}</p>
                         {% if list_val.rank == 1 %}
                             <p>Rank : A（最優先でやる）</p>

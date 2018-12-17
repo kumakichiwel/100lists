@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="あなたの夢の実現を加速させるツール。">
+    <meta name="description" content="あなたの100のリストをいつでも手の中に。夢の実現を加速させるツール。">
     <title>100Lists</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- bootstrap -->
@@ -30,19 +30,16 @@
                 </div>
                 <div class="navbar-collapse collapse" id="navbar-main">
                     <ul class="nav navbar-nav">
-                        <li><a href="/">あなたのリスト</a></li>
-                        <li><a href="/others_list/">みんなのリスト</a></li>
-                        <li><a href="/accounts/"><i class="fab fa-angellist"></i>profile</a></li>
+                        <li><a href="/">Your Lists</a></li>
+                        <li><a href="/others_list/">Other's Lists</a></li>
+                        <li><a href="/accounts/">profile</a></li>
                         {% if user.is_authenticated %}
                         <li><a href="{% url 'logout' %}" class="logout">Logout</a></li>
                         {% else %}
                         <li><a href="{% url 'accounts:signup' %}" class="signup">Sign up</a></li>
                         <li><a href="{% url 'login' %}" class="login">Login</a></li>
                         {% endif %}
-                        
                     </ul>
-                    
-                    
                 </div>
             </div>
         </div>
