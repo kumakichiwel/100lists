@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container profile_box">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="profile_img">
+                        {% if profile.profile_image %}
+                            <p><img src="{{ profile.profile_image_edit.url }}" class="image-round1"></p>
+                        {% else %}
+                            <p><i class="far fa-user-circle fa-5x awe_profile_img"></i></p><br>
+                            <p>No Profile Image</p>
+                        {% endif %}
+                        {% if profile.name %}
+                            <h3>{{ profile.name }}</h3>
+                        {% else %}
+                            <p>No Hundle Name</p>
+                        {% endif %}
+                        {% if profile.profile_content %}
+                            <p>{{ profile.profile_content }}</p>
+                        {% else %}
+                            <p>No Profile</p>
+                        {% endif %}
+                    </div>
+                    <hr>
+                    <div class="profile_social">
+                        {% if profile.twitter %}
+                            <p><i class="fab fa-twitter-square awe_cust fa-2x"></i> <a href={{ profile.twitter }} target="_blank">{{ profile.twitter }}</a></p>
+                        {% else %}
+                            <p><i class="fab fa-twitter-square awe_cust fa-2x"></i> No Twitter ID</p>
+                        {% endif %}
+                    </div>
+                    <BR>
+                    <div class="button_area">
+                    {% if user.id == profile.user_id %}
+                        <a href="{% url 'accounts:update' pk=profile.id %}" class="btn btn-primary btn-right">編集</a>
+                        <a href="{% url 'list:index' %}" class="btn btn-secondary btn-right">戻る</a>
+                    {% else %}
+                        <a href="{% url 'list:others_list' %}" class="btn btn-secondary btn-right">戻る</a>
+                    {% endif %}
+                    </div>
+                    <HR>
+                    {% if user.id == profile.user_id %}
+                        <div class="">
+                            <p>Listの公開設定を一括変更する</p>
+                            <a href="{% url 'list:share_open' %}" class="btn btn-primary btn-right">公開</a>
+                            <a href="{% url 'list:share_close' %}" class="btn btn-danger btn-right">非公開</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

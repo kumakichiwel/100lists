@@ -18,7 +18,7 @@ def detail(request, pk):
     form = CommentForm()
     return render(request, 'list/detail.html', {'list_val':list_val, 'comment_val':comment_val, 'form':form })
 
- 
+@login_required
 def create(request):
     if request.method == "POST":
         form = ListForm(request.POST, request.FILES)
@@ -31,7 +31,7 @@ def create(request):
         form = ListForm()
     return render(request, 'list/create.html', {'form':form})
  
- 
+@login_required
 def update(request, pk):
     list = get_object_or_404(List, id=pk)
 
@@ -59,12 +59,12 @@ def update(request, pk):
         )
     return render(request, 'list/update.html', {'form':form, 'pk':pk, 'image_edit':list.image_edit})   
 
- 
+@login_required
 def delete(request, pk):
     List.objects.get(pk=pk).delete()
     return redirect('list:index')
 
-
+@login_required
 def create_comment(request, pk):
     form = CommentForm(request.POST)
     if form.is_valid():
@@ -73,12 +73,12 @@ def create_comment(request, pk):
         Comment.save()
     return redirect('list:detail', pk=pk)
 
-
+@login_required
 def delete_comment(request, pk, id):
     Comment.objects.get(pk=pk).delete()
     return redirect('list:detail', pk=id)
 
-
+@login_required
 def status_update(request, pk):
     list = get_object_or_404(List, id=pk)
     if list.status == False:
@@ -93,7 +93,7 @@ def others_list(request):
     lists = List.objects.filter(share=1).exclude(user_id=request.user.id).order_by('created_at')[:20]
     return render(request, 'list/others.html', {'lists':lists})
 
-
+@login_required
 def share_open(request):
     user_lists = List.objects.filter(user__id=request.user.id)
     for v in user_lists:
@@ -101,7 +101,7 @@ def share_open(request):
         v.save()
     return redirect('accounts:index')
 
-
+@login_required
 def share_close(request):
     user_lists = List.objects.filter(user__id=request.user.id)
     for v in user_lists:

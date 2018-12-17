@@ -20,9 +20,10 @@ def index(request):
 
 def detail(request, pk):
     profile = get_object_or_404(Profile, id=pk)
-    pass
+    return render(request, 'accounts/detail.html', {'profile':profile})
 
 
+@login_required
 def create(request):
     form = ProfileForm(request.POST, request.FILES)
     if form.is_valid():
@@ -31,7 +32,7 @@ def create(request):
         profile.save()
     return redirect('list:index')
 
-
+@login_required
 def update(request, pk):
     profile = get_object_or_404(Profile, id=pk)
 
