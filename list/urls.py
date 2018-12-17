@@ -5,6 +5,7 @@ app_name = 'list'
 urlpatterns = [
     path('', views.index, name='index'),
     path('create/', views.create, name='create'),
+    path('others_list/', views.others_list, name='others_list'),
     path('<int:pk>/detail/', views.detail, name='detail'),
     path('<int:pk>/update/', views.update, name='update'),
     path('<int:pk>/delete/', views.delete, name='delete'),

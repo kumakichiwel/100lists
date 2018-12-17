@@ -47,10 +47,19 @@
                         {% else %}
                             <p>Rank : C（いつかやる）</p>
                         {% endif %}
+                        {% if list_val.share == 1 %}
+                            <p>Share : 公開する</p>
+                        {% else %}
+                            <p>Share : 公開しない</p>
+                        {% endif %}
                         <p> created at : {{ list_val.created_at }}</p>
-                        <a href="{% url 'list:update' pk=list_val.id %}" class="btn btn-primary btn-right">編集</a>
-                        <a href="{% url 'list:delete' pk=list_val.id %}" class="btn btn-danger btn-right" onclick='return confirm("削除してよろしいですか？");'>削除</a>
-                        <a href="{% url 'list:index' %}" class="btn btn-secondary btn-right">戻る</a>
+                        {% if user.id == list_val.user_id %}
+                            <a href="{% url 'list:update' pk=list_val.id %}" class="btn btn-primary btn-right">編集</a>
+                            <a href="{% url 'list:delete' pk=list_val.id %}" class="btn btn-danger btn-right" onclick='return confirm("削除してよろしいですか？");'>削除</a>
+                            <a href="{% url 'list:index' %}" class="btn btn-secondary btn-right">戻る</a>
+                        {% else %}
+                            <a href="{% url 'list:others_list' %}" class="btn btn-secondary btn-right">戻る</a>
+                        {% endif %}
                     </div>
                 </div>
                 

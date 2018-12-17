@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container profile_box">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="profile_img">
+                        {% if not profile.profile_image %}
+                            
+                        {% else %}
+                            <p><img src="{{ profile.profile_image_edit.url }}" class="image-round1"></p>
+                        {% endif %}
+                        <h3>{{ profile.name }}</h3>
+                        <p>{{ profile.profile_content }}</p>
+                    </div>
+                    {% if user.id == profile.user_id %}
+                        <a href="{% url 'accounts:update' pk=profile.id %}" class="btn btn-primary btn-right">編集</a>
+                        <a href="{% url 'list:index' %}" class="btn btn-secondary btn-right">戻る</a>
+                    {% else %}
+                        <a href="{% url 'list:others_list' %}" class="btn btn-secondary btn-right">戻る</a>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

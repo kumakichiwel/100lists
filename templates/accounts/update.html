@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-7 col-sm-10 col-xs-10" id="banner">
+                <h3>Update Your Profile</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 col-xs-1">
+        </div>
+        <div class="col-lg-8 col-md-10 col-sm-10 col-xs-10">
+            <form class="form-horizontal" action="{% url 'accounts:update' pk=pk %}" method="POST" enctype="multipart/form-data" autocomplete="off">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ form.name.label_tag }}</label>
+                    <div class="col-sm-8">{{form.name|add_class:"form-control"}}</div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ form.profile_content.label_tag }}</label>
+                    <div class="col-sm-8">{{form.profile_content|add_class:"form-control"}}</div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">{{ form.profile_image.label_tag }}</label>
+                    <div class="col-sm-8">{{form.profile_image|add_class:"form-control"}}</div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-right">送信</button>
+                    <a href="{% url 'list:index' %}" class="btn btn-secondary btn-right">戻る</a>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-2 col-md-1 col-sm-1 col-xs-1">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

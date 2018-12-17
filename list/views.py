@@ -42,6 +42,7 @@ def update(request, pk):
             list.content = form.cleaned_data['content']
             list.due_date = form.cleaned_data['due_date']
             list.rank = form.cleaned_data['rank']
+            list.share = form.cleaned_data['share']
             list.image = form.cleaned_data['image']
             list.save()
             return redirect('list:index')
@@ -52,6 +53,7 @@ def update(request, pk):
                 'content':list.content,
                 'due_date':list.due_date,
                 'rank':list.rank,
+                'share':list.share,
                 'image':list.image
             }
         )
@@ -85,4 +87,9 @@ def status_update(request, pk):
         list.status = False
     list.save()
     return redirect('list:index')
+
+
+def others_list(request):
+    lists = List.objects.filter(share=1).exclude(user_id=request.user.id).order_by('created_at')[:10]
+    return render(request, 'list/others.html', {'lists':lists})
 

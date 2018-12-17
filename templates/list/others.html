@@ -7,29 +7,24 @@
 
         <div class="row">
             <div class="col-lg-8 col-md-7 col-sm-6 col-xs-6" id="banner">
-                <h3>あなたのリスト</h3>
+                <h3>みんなのリスト</h3>
+                <p class="small_text">※公開設定された投稿のみ表示されます。</p></div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-6">
-                <a href="{% url 'list:create' %}">
-                    <i class="fas fa-plus-circle fa-2x awe_cust"></i>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            {% for v in user_lists %}
-                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 list_heading2">
+            {% for v in lists %}
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 list_heading3">
                     <a href="{% url 'list:detail' pk=v.id %}">
                         {{ v.title }}<div class="hidden-sm hidden-xs list_created_at">登録日：{{ v.created_at }}</div>
                     </a>
                 </div>
             {% empty %}
-                <p>まだ、リストが登録されていません。最初のリストを登録して見ましょう！</p>
+                <p>リストが登録されていません</p>
             {% endfor %}
             
         </div>
-        
+
     </div>
 </div>
 

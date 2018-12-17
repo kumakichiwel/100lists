@@ -1,5 +1,4 @@
 from django.db import models
-from datetime import datetime
 from imagekit.models import ImageSpecField, ProcessedImageField
 from imagekit.processors import ResizeToFill
 
@@ -31,7 +30,7 @@ class List(models.Model):
     rank = models.IntegerField(default=0)
 
     ## 登録日
-    created_at = models.DateTimeField(default=datetime.now())
+    created_at = models.DateTimeField(auto_now_add=True)
 
     ## Userテーブルとのリレーション
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -48,15 +47,12 @@ class List(models.Model):
         format='JPEG'
     )
 
-    image_thumbnail = ImageSpecField(
-        source="image",
-        processors=[ResizeToFill(75, 75)],
-        format='JPEG'
-    )
-
     ## 達成ステータス（True：達成済み、False：実行中）
     status = models.BooleanField(default=False)
 
+    ## 公開ステータス
+    ## 1:公開する、2:公開しない
+    share = models.IntegerField(default=2)
 
     def __str__(self):
         return self.title
@@ -69,7 +65,7 @@ class Comment(models.Model):
     comment = models.TextField(max_length=100)
 
     ## 登録日
-    created_at = models.DateTimeField(default=datetime.now())
+    created_at = models.DateTimeField(auto_now_add=True)
 
 
     ## listテーブルとのリレーション
