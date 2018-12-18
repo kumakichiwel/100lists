@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django_cleanup',
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
