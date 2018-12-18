@@ -1,0 +1,993 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ohlc",
+				"ohlc"
+			],
+			[
+				"indicat",
+				"indicator_val"
+			],
+			[
+				"stock",
+				"stock"
+			],
+			[
+				"low",
+				"low"
+			],
+			[
+				"tdate",
+				"tdate"
+			],
+			[
+				"adj_",
+				"adj_open_price"
+			],
+			[
+				"read",
+				"read_ohlc"
+			],
+			[
+				"upate",
+				"update_stocks"
+			],
+			[
+				"val",
+				"val"
+			],
+			[
+				"v",
+				"v"
+			],
+			[
+				"rea",
+				"read_stock"
+			],
+			[
+				"c",
+				"c"
+			],
+			[
+				"pl",
+				"pl"
+			],
+			[
+				"p",
+				"profit_factor"
+			],
+			[
+				"sc",
+				"scratch_count"
+			],
+			[
+				"lo",
+				"lose_count"
+			],
+			[
+				"backtest",
+				"backtest_result"
+			],
+			[
+				"tmp_",
+				"tmp_loss"
+			],
+			[
+				"Backtest",
+				"BacktestResult"
+			],
+			[
+				"backtes",
+				"backtest_setting"
+			],
+			[
+				"stock_",
+				"stock_data"
+			],
+			[
+				"Bak",
+				"BacktestResult"
+			],
+			[
+				"tmp",
+				"tmp_pl"
+			],
+			[
+				"open",
+				"open_price"
+			],
+			[
+				"close_",
+				"close_price"
+			],
+			[
+				"si",
+				"side_flag"
+			],
+			[
+				"indi",
+				"indicator_val"
+			],
+			[
+				"indicator",
+				"indicator_id"
+			],
+			[
+				"tm",
+				"tmp_stock"
+			],
+			[
+				"trade_condition_val",
+				"trade_condition_val"
+			],
+			[
+				"trade_",
+				"trade_condition_val"
+			],
+			[
+				"trade",
+				"trade_condition_val"
+			],
+			[
+				"in",
+				"indicator_val"
+			],
+			[
+				"trade_sys",
+				"trade_sys"
+			],
+			[
+				"Trade",
+				"TradeCondition"
+			],
+			[
+				"update_",
+				"update_trade_condition"
+			],
+			[
+				"trad",
+				"trade_condition"
+			],
+			[
+				"cond",
+				"condition1"
+			],
+			[
+				"upd",
+				"update_tradesys"
+			],
+			[
+				"condition2",
+				"condition2"
+			],
+			[
+				"TradeSys",
+				"TradeSys"
+			],
+			[
+				"indicators",
+				"indicators_ref"
+			],
+			[
+				"Indicators",
+				"Indicators"
+			],
+			[
+				"ad",
+				"adj_volume"
+			],
+			[
+				"text",
+				"text_index"
+			],
+			[
+				"ranges",
+				"rangeselector"
+			],
+			[
+				"clo",
+				"adj_close_price"
+			],
+			[
+				"main",
+				"maintenance_index"
+			],
+			[
+				"post_",
+				"post_detail"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"question",
+				"question_text"
+			],
+			[
+				"wra",
+				"wrapper"
+			],
+			[
+				"vie",
+				"viewlog"
+			],
+			[
+				"search",
+				"search4letters"
+			],
+			[
+				"str",
+				"str"
+			],
+			[
+				"method",
+				"method_name"
+			],
+			[
+				"dice",
+				"dice_num"
+			],
+			[
+				"true",
+				"true"
+			],
+			[
+				"users",
+				"users"
+			],
+			[
+				"con",
+				"convert"
+			],
+			[
+				"cha",
+				"chart_globals"
+			],
+			[
+				"se",
+				"search"
+			],
+			[
+				"close",
+				"close_date"
+			],
+			[
+				"rat",
+				"rates2"
+			],
+			[
+				"el",
+				"elsif\telsif ..."
+			],
+			[
+				"ma",
+				"maximum"
+			],
+			[
+				"cd",
+				"cd"
+			],
+			[
+				"base_",
+				"base_rate_max_date"
+			],
+			[
+				"from",
+				"fromDate"
+			],
+			[
+				"Kabuka",
+				"kabukaupdate"
+			],
+			[
+				"kabuka",
+				"kabukamaintenance"
+			],
+			[
+				"di_",
+				"di_minus"
+			],
+			[
+				"els",
+				"else"
+			],
+			[
+				"condition_",
+				"condition_tmp"
+			],
+			[
+				"ba",
+				"backtest_id"
+			],
+			[
+				"tra",
+				"tradesystem"
+			],
+			[
+				"back",
+				"backtest"
+			],
+			[
+				"w",
+				"w\tattr_writer .."
+			],
+			[
+				"begin",
+				"begin\tbegin … rescue … end"
+			],
+			[
+				"tradesyte",
+				"tradesystem_id"
+			],
+			[
+				"tradesystem",
+				"tradesystem_id"
+			],
+			[
+				"win",
+				"win_count_tmp"
+			],
+			[
+				"pl_sor",
+				"pl_sorted_concat"
+			],
+			[
+				"pl_",
+				"pl_sorted"
+			],
+			[
+				"pl_s",
+				"pl_sum_sorted"
+			],
+			[
+				"co",
+				"companies"
+			],
+			[
+				"tet",
+				"testcondition2"
+			],
+			[
+				"a",
+				"attributes"
+			],
+			[
+				"test",
+				"testcondition2"
+			],
+			[
+				"ave",
+				"average_loss"
+			],
+			[
+				"d",
+				"d"
+			],
+			[
+				"to",
+				"to_i"
+			],
+			[
+				"all",
+				"all\tall? { |e| .. }"
+			],
+			[
+				"Ee",
+				"execute_time"
+			],
+			[
+				"calc",
+				"calc_pl"
+			],
+			[
+				"condit",
+				"condition1"
+			],
+			[
+				"condition",
+				"condition3"
+			],
+			[
+				"each_",
+				"each_with_index"
+			],
+			[
+				"ope",
+				"open_close_flg"
+			],
+			[
+				"i",
+				"in2-2-1"
+			],
+			[
+				"condi",
+				"condition1"
+			],
+			[
+				"end",
+				"end"
+			],
+			[
+				"cndi",
+				"condition1"
+			],
+			[
+				"opencl",
+				"openclose_flg"
+			],
+			[
+				"te",
+				"test_condition2"
+			],
+			[
+				"Tra",
+				"Tradesystem"
+			],
+			[
+				"tradesystem_",
+				"tradesystem_trade_conditions"
+			],
+			[
+				"Indi",
+				"Indicator"
+			],
+			[
+				"indica",
+				"indicator_params"
+			],
+			[
+				"b",
+				"b"
+			],
+			[
+				"com",
+				"company_data"
+			],
+			[
+				"pro",
+				"product_A_sales"
+			],
+			[
+				"Comp",
+				"Company"
+			],
+			[
+				"row",
+				"row_meigara"
+			],
+			[
+				"row_",
+				"row_meigara"
+			],
+			[
+				"rows",
+				"rows_meigara"
+			],
+			[
+				"st",
+				"string"
+			],
+			[
+				"edi",
+				"edit_filename"
+			],
+			[
+				"save",
+				"save_CSVfile"
+			],
+			[
+				"get",
+				"get_kabu_data"
+			],
+			[
+				"y",
+				"y"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"mess",
+				"messages"
+			],
+			[
+				"messa",
+				"message"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"fom",
+				"form-control"
+			],
+			[
+				"task",
+				"task"
+			],
+			[
+				"create",
+				"created_tasks"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Procfile",
+			"settings":
+			{
+				"buffer_size": 39,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "listapp/settings.py",
+			"settings":
+			{
+				"buffer_size": 3659,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "listapp/wsgi.py",
+			"settings":
+			{
+				"buffer_size": 391,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "listapp/local_settings.py",
+			"settings":
+			{
+				"buffer_size": 3435,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 374.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 482.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/itoukouji/django_local/your100lists",
+		"/Users/itoukouji/django_local/your100lists/listapp",
+		"/Users/itoukouji/django_local/your100lists/templates"
+	],
+	"file_history":
+	[
+		"/Users/itoukouji/django_local/algos_1/templates/base.html",
+		"/Users/itoukouji/django_local/algos_1/stock/models.py",
+		"/Users/itoukouji/django_local/algos_1/tradesys/models.py",
+		"/Users/itoukouji/django_local/algos_1/indicators/models.py",
+		"/Users/itoukouji/django_local/algos_1/lib/backtest.py",
+		"/Users/itoukouji/django_local/algos_1/maintenance/views.py",
+		"/Users/itoukouji/django_local/algos_1/maintenance/lib/search_files.py",
+		"/Users/itoukouji/Downloads/csv_all/5201_2014.csv",
+		"/Users/itoukouji/django_local/algos_1/insert.csv",
+		"/Users/itoukouji/django_local/algos_1/result.csv",
+		"/Users/itoukouji/django_local/algos_1/Procfile",
+		"/Users/itoukouji/django_local/algos_1/tradesys/forms.py",
+		"/Users/itoukouji/django_local/algos_1/templates/tradesys/create.html",
+		"/Users/itoukouji/django_local/algos_1/tradesys/views.py",
+		"/Users/itoukouji/django_local/algos_1/tradesys/urls.py",
+		"/Users/itoukouji/django_local/algos_1/accounts/urls.py",
+		"/Users/itoukouji/Downloads/php.ini",
+		"/Users/itoukouji/Downloads/php.info",
+		"/Users/itoukouji/django_local/algos_1/stock/management/commands/download.py",
+		"/Users/itoukouji/django_local/algos_1/templates/tradesys/backtest_result.html",
+		"/Users/itoukouji/django_local/algos_1/lib/plot_stock_chart.py",
+		"/Users/itoukouji/django_local/algos_1/lib/plot_chart.py",
+		"/Users/itoukouji/django_local/algos_1/accounts/views.py",
+		"/Users/itoukouji/django_local/algos_1/templates/stock/chart.html",
+		"/Users/itoukouji/django_local/algos_1/stock/views.py",
+		"/Users/itoukouji/django_local/algos_1/stock/urls.py",
+		"/Users/itoukouji/django_local/algos_1/templates/accounts/index.html",
+		"/Users/itoukouji/django_local/algos_1/Chart.html",
+		"/Users/itoukouji/django_local/algos_1/japan-all-stock-data.csv",
+		"/Users/itoukouji/django_local/algos_1/.gitignore",
+		"/Users/itoukouji/Downloads/csv_all/file.txt",
+		"/Users/itoukouji/django_local/algos_1/download.py",
+		"/Users/itoukouji/django_local/algos_1/japan-all-stock-prices.csv",
+		"/Users/itoukouji/django_local/algos_1/templates/tradesys/backtest_setting.html",
+		"/Users/itoukouji/django_local/algos_1/templates/tradesys/detail.html",
+		"/Users/itoukouji/django_local/algos_1/requirements.txt",
+		"/Users/itoukouji/django_local/algos_1/japan-all-stock-data.json",
+		"/Users/itoukouji/django_local/algos_1/test.sh",
+		"/Users/itoukouji/django_local/algos_1/stock.csv",
+		"/Users/itoukouji/django_local/algos_1/stock/admin.py",
+		"/Users/itoukouji/django_local/algos_1/algos_1/local_settings.py",
+		"/Users/itoukouji/django_local/algos_1/algos_1/settings.py",
+		"/Users/itoukouji/django_local/algos_1/static/css/algos.css",
+		"/Users/itoukouji/django_local/algos_1/tradesys/admin.py",
+		"/Users/itoukouji/django_local/algos_1/templates/indicators/index.html",
+		"/Users/itoukouji/django_local/algos_1/templates/tradesys/index.html",
+		"/Users/itoukouji/django_local/algos_1/templates/tradesys/update.html",
+		"/Users/itoukouji/django_local/algos_1/templates/tradesys/stop_loss.html",
+		"/Users/itoukouji/django_local/algos_1/templates/tradesys/update_trade_condition.html",
+		"/Users/itoukouji/django_local/algos_1/indicators/views.py",
+		"/Users/itoukouji/django_local/algos_1/algos_1/urls.py",
+		"/Users/itoukouji/django_local/algos_1/templates/tradesys/create_trade_condition.html",
+		"/Users/itoukouji/django_local/algos_1/templates/maintenance/index.html",
+		"/Users/itoukouji/Downloads/honoka/bootstrap.html",
+		"/Users/itoukouji/django_local/algos_1/indicators/forms.py",
+		"/Users/itoukouji/django_local/algos_1/lib/util.py",
+		"/Users/itoukouji/django_local/algos_1/tradesys/migrations/0001_initial.py",
+		"/Users/itoukouji/django_local/algos_1/indicators/urls.py",
+		"/Users/itoukouji/django_local/algos_1/maintenance/forms.py",
+		"/Users/itoukouji/django_local/algos_1/templates/maintenance/import_csv.html",
+		"/Users/itoukouji/django_local/algos_1/maintenance/urls.py",
+		"/Users/itoukouji/django_local/algos_1/templates/registration/login.html",
+		"/Users/itoukouji/Downloads/honoka/css/bootstrap.css",
+		"/Users/itoukouji/django_local/algos_1/templates/registration/logged_out.html",
+		"/Users/itoukouji/django_local/algos_1/accounts/models.py",
+		"/Users/itoukouji/django_local/djangogirls/blog/static/css/blog.css",
+		"/Users/itoukouji/django_local/djangogirls/blog/templates/blog/base.html",
+		"/Users/itoukouji/django_local/djangogirls/blog/templates/blog/post_edit.html",
+		"/Users/itoukouji/django_local/djangogirls/blog/forms.py",
+		"/Users/itoukouji/django_local/djangogirls/blog/templates/blog/post_detail.html",
+		"/Users/itoukouji/django_local/djangogirls/blog/templates/blog/post_list.html",
+		"/Users/itoukouji/django_local/djangogirls/blog/views.py",
+		"/Users/itoukouji/django_local/djangogirls/accounts/templates/accounts/signup.html",
+		"/Users/itoukouji/django_local/djangogirls/accounts/views.py",
+		"/Users/itoukouji/django_local/djangogirls/mysite/urls.py",
+		"/Users/itoukouji/django_local/djangogirls/blog/urls.py",
+		"/Users/itoukouji/django_local/djangogirls/accounts/urls.py",
+		"/Users/itoukouji/django_local/djangogirls/blog/admin.py",
+		"/Users/itoukouji/django_local/djangogirls/blog/models.py",
+		"/Users/itoukouji/django_local/djangogirls/templates/registration/logged_out.html",
+		"/Users/itoukouji/django_local/djangogirls/templates/registration/login.html",
+		"/Users/itoukouji/django_local/djangogirls/templates/base.html",
+		"/Users/itoukouji/django_local/djangogirls/blog/apps.py",
+		"/Users/itoukouji/django_local/djangogirls/mysite/settings.py",
+		"/Users/itoukouji/django_local/algos/algos001/admin.py",
+		"/Users/itoukouji/django_local/algos/algos001/templates/csv.html",
+		"/Users/itoukouji/django_local/algos/algos001/templates/import_files.html",
+		"/Users/itoukouji/django_local/algos/algos001/forms.py",
+		"/Users/itoukouji/django_local/algos/algos001/views.py",
+		"/Users/itoukouji/django_local/algos/algos001/urls.py",
+		"/Users/itoukouji/django_local/algos/algos/urls.py",
+		"/Users/itoukouji/django_local/algos/test1.csv",
+		"/Users/itoukouji/django_local/algos/test.csv",
+		"/Users/itoukouji/django_local/algos/algos001/models.py",
+		"/Users/itoukouji/django_local/algos/algos/local_settings.py",
+		"/Users/itoukouji/django_local/algos/algos/settings.py",
+		"/Users/itoukouji/django_local/algos/.gitignore",
+		"/Users/itoukouji/Downloads/1301_1985.csv",
+		"/Users/itoukouji/Downloads/1301_1986.csv",
+		"/Users/itoukouji/Downloads/1301_1983.csv",
+		"/Users/itoukouji/django_local/algos/algos001/apps.py",
+		"/Users/itoukouji/django_local/algos/algos001/templates/index.html",
+		"/Users/itoukouji/django_local/algos/algos001/migrations/0001_initial.py",
+		"/Users/itoukouji/django_local/algos_base/.gitignore",
+		"/Users/itoukouji/django_local/algos_base/algos_base/settings.py",
+		"/Users/itoukouji/django_local/algos_base/algos_base/urls.py",
+		"/Users/itoukouji/django_local/algos_base/algos001/urls.py",
+		"/Users/itoukouji/django_local/algos_base/algos001/views.py",
+		"/Users/itoukouji/django_local/algos/algos001/algos001/settings.py",
+		"/Users/itoukouji/django_local/algos/algos001/polls/admin.py",
+		"/Users/itoukouji/django_local/algos/algos001/algos001/urls.py",
+		"/Users/itoukouji/django_local/algos/algos001/polls/templates/polls/index.html",
+		"/Users/itoukouji/django_local/algos/algos001/polls/models.py",
+		"/Users/itoukouji/django_local/algos/algos001/polls/urls.py",
+		"/Users/itoukouji/django_local/algos/algos001/polls/templates/polls/detail.html",
+		"/Users/itoukouji/django_local/algos/algos001/polls/templates/polls/results.html",
+		"/Users/itoukouji/django_local/algos/algos001/polls/static/polls/style.css",
+		"/Users/itoukouji/django_local/algos/algos001/templates/admin/base.html",
+		"/Users/itoukouji/django_local/algos/algos001/polls/tests.py",
+		"/Users/itoukouji/django_local/algos/algos001/polls/views.py",
+		"/Users/itoukouji/pyapptest/gittest/test001.py",
+		"/Users/itoukouji/pyapptest/templates/entry.html",
+		"/Users/itoukouji/pyapptest/templates/base.html",
+		"/Users/itoukouji/pyapptest/tmpl_decorator.py",
+		"/Users/itoukouji/pyapptest/simple_webapp.py",
+		"/Users/itoukouji/pyapptest/CountFromBy.py",
+		"/Users/itoukouji/pyapptest/DBcm.py",
+		"/Users/itoukouji/pyapptest/quick_session.py"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Procfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 39,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "listapp/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1394,
+								1394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1776.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "listapp/wsgi.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 391,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								391,
+								391
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "listapp/local_settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3435,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 195.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 110.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "your100list.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"tradesys/views.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/django_local/algos_1/algos_1.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

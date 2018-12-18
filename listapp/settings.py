@@ -16,8 +16,6 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-LOGIN_REDIRECT_URL = '/'
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -29,6 +27,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = []
 
+# ログイン後のリダイレクト先にトップページを指定
+LOGIN_REDIRECT_URL = '/'
 
 # Application definition
 
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -107,6 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
@@ -128,8 +130,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 try:
@@ -137,9 +139,8 @@ try:
 except ImportError:
     pass
 
+
 if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
-
-
 
