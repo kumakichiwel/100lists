@@ -1,1 +1,1 @@
-web: gunicorn your100lists.wsgi --log-file -
+web: gunicorn listapp.wsgi --log-file -
