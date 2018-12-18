@@ -2,10 +2,16 @@
 {% load widget_tweaks %}
 {% load staticfiles %}
 
-{% block title %}Logout{% endblock %}
+{% block title %}Logoutしました。| 100Lists {% endblock %}
 
 {% block content %}
-<h1>Logged Out</h1>
-<p>Thanks for spending some quality time with the Web site today.</p>
-<p><a href="{% url 'login' %}">Log in again</a></p>
+<div class="container">
+    <div class="row">
+        <h4>（仮）100Lists</h4>
+    </div>
+    <HR>
+    <h1>Logged Outしました。</h1>
+    <p>使っていただいて有難うございます！また使って頂けると嬉しいです。</p>
+    <p><a href="{% url 'login' %}">再度、ログインする</a></p>
+</div>
 {% endblock %}

@@ -22,6 +22,8 @@
                         {% else %}
                             <p>No Hundle Name</p>
                         {% endif %}
+                    </div>
+                    <div>
                         {% if profile.profile_content %}
                             <p>{{ profile.profile_content }}</p>
                         {% else %}
@@ -29,7 +31,7 @@
                         {% endif %}
                     </div>
                     <hr>
-                    <div class="profile_social">
+                    <div>
                         {% if profile.twitter %}
                             <p><i class="fab fa-twitter-square awe_cust fa-2x"></i> <a href={{ profile.twitter }} target="_blank">{{ profile.twitter }}</a></p>
                         {% else %}

@@ -60,6 +60,5 @@ def update(request, pk):
 class SignUpView(generic.CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('login')
-    #success_url = reverse_lazy('accounts:create')
     template_name = 'accounts/signup.html'
 

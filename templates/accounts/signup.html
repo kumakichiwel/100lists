@@ -1,12 +1,62 @@
-{% extends 'base.html' %}
- 
+
+{% load widget_tweaks %}
+{% load static %}
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<!-- bootstrap -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+<!-- base -->
+<link rel="stylesheet" href="{% static 'css/base.css' %}" />
+<link rel="stylesheet" href="{% static 'css/list.css' %}" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 {% block content %}
-<h1>Sign up</h1>
-<section class="common-form">
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="submit">Sign up</button>
-    </form>
-</section>
+
+<div class="container">
+    <div class="row">
+        <h4>（仮）100Lists</h4>
+    </div>
+    <HR>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <h3>ユーザー登録</h3>
+            <div class="box">
+                <form method="post" autocomplete="off" class="login-container">
+                    {% csrf_token %}
+                    {% for field, errors in form.errors.items %}
+                        {% for error in errors %}
+                            <p class="alert alert-danger">{{ error }}</p>
+                        {% endfor %}
+                    {% endfor %}
+                    <div class="divider-form"></div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">User Name</label>
+                        {{ form.username|add_class:"form-control" }}
+                        <p class="small_text">半角アルファベット、半角数字、@/./+/-/_ で150文字以下にしてください。</p>
+                    </div>
+
+                    <div class="divider-form"></div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        {{ form.password1|add_class:"form-control" }}
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password(Re)</label>
+                        {{ form.password2|add_class:"form-control" }}
+                        <p class="small_text">・あなたの他の個人情報と似ているパスワードにはできません。</p>
+                        <p class="small_text">・パスワードは最低 8 文字以上必要です。</p>
+                        <p class="small_text">・よく使われるパスワードにはできません。</p>
+                        <p class="small_text">・数字だけのパスワードにはできません。</p>
+                    </div>
+
+                    <div class="divider-form"></div>
+                    <button type="submit" class="btn-block btn btn-lg btn-primary">Sign up</button>
+
+                    <p class="text-center">アカウントがある方は<a href="{% url 'login' %}">コチラ</a>でログイン</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
