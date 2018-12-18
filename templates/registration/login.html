@@ -1,52 +1,60 @@
 {% load widget_tweaks %}
 {% load static %}
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<!-- bootstrap -->
-<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
-<!-- base -->
-<link rel="stylesheet" href="{% static 'css/base.css' %}" />
-<link rel="stylesheet" href="{% static 'css/list.css' %}" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="あなたの100のリストをいつでも手の中に。夢の実現を加速させるツール。">
+    <title>100Lists</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <!-- base -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/list.css' %}" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
 
-{% block content %}
-<div class="container">
-    <div class="row">
-        <h4>（仮）100Lists</h4>
-    </div>
-    <HR>
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-            <h3>Log in</h3>
-            <div class="box">
-                <form method="post" action="{% url 'login' %}" autocomplete="off" class="login-container">
-                    {% csrf_token %}
-                    {% for field, errors in form.errors.items %}
-                        {% for error in errors %}
-                            <p class="alert alert-danger">{{ error }}</p>
+<body>
+    <div class="container">
+        <div class="row">
+            <h4>（仮）100Lists</h4>
+        </div>
+        <HR>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <h3>Log in</h3>
+                <div class="box">
+                    <form method="post" action="{% url 'login' %}" autocomplete="off" class="login-container">
+                        {% csrf_token %}
+                        {% for field, errors in form.errors.items %}
+                            {% for error in errors %}
+                                <p class="alert alert-danger">{{ error }}</p>
+                            {% endfor %}
                         {% endfor %}
-                    {% endfor %}
-                    <div class="divider-form"></div>
+                        <div class="divider-form"></div>
 
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">User Name</label>
-                        {{ form.username|add_class:"form-control" }}
-                    </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">User Name</label>
+                            {{ form.username|add_class:"form-control" }}
+                        </div>
 
-                    <div class="divider-form"></div>
+                        <div class="divider-form"></div>
 
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        {{ form.password|add_class:"form-control" }}
-                    </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            {{ form.password|add_class:"form-control" }}
+                        </div>
 
-                    <div class="divider-form"></div>
-                    <button type="submit" class="btn-block btn btn-lg btn-primary">Log in</button>
+                        <div class="divider-form"></div>
+                        <button type="submit" class="btn-block btn btn-lg btn-primary">Log in</button>
 
-                    <p class="text-center">アカウントの新規作成は<a href="{% url 'accounts:signup' %}">コチラ</a></p>
-                </form>
+                        <p class="text-center">アカウントの新規作成は<a href="{% url 'accounts:signup' %}">コチラ</a></p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-{% endblock %}
+</body>
+</html>
