@@ -3,7 +3,7 @@ staticfiles
 local_settings.py
 db.sqlite3
 *.py[co]
-listapp.sublime-project
-listapp.sublime-workspace
+*.sublime-project
+*.sublime-workspace
 *.jpg
 media/
