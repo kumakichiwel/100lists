@@ -531,17 +531,16 @@
 			"file": "listapp/settings.py",
 			"settings":
 			{
-				"buffer_size": 3941,
+				"buffer_size": 3942,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": ".gitignore",
+			"file": "requirements.txt",
 			"settings":
 			{
-				"buffer_size": 112,
-				"encoding": "UTF-8",
+				"buffer_size": 322,
 				"line_ending": "Unix"
 			}
 		},
@@ -672,14 +671,13 @@
 	"expanded_folders":
 	[
 		"/Users/itoukouji/django_local/your100lists",
-		"/Users/itoukouji/django_local/your100lists/listapp",
 		"/Users/itoukouji/django_local/your100lists/static",
-		"/Users/itoukouji/django_local/your100lists/templates",
-		"/Users/itoukouji/django_local/your100lists/templates/list",
-		"/Users/itoukouji/django_local/your100lists/templates/registration"
+		"/Users/itoukouji/django_local/your100lists/static/js",
+		"/Users/itoukouji/django_local/your100lists/templates"
 	],
 	"file_history":
 	[
+		"/Users/itoukouji/django_local/your100lists/.gitignore",
 		"/Users/itoukouji/django_local/algos_1/templates/base.html",
 		"/Users/itoukouji/django_local/algos_1/stock/models.py",
 		"/Users/itoukouji/django_local/algos_1/tradesys/models.py",
@@ -806,8 +804,7 @@
 		"/Users/itoukouji/pyapptest/tmpl_decorator.py",
 		"/Users/itoukouji/pyapptest/simple_webapp.py",
 		"/Users/itoukouji/pyapptest/CountFromBy.py",
-		"/Users/itoukouji/pyapptest/DBcm.py",
-		"/Users/itoukouji/pyapptest/quick_session.py"
+		"/Users/itoukouji/pyapptest/DBcm.py"
 	],
 	"find":
 	{
@@ -843,7 +840,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -871,7 +868,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -880,15 +877,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3941,
+						"buffer_size": 3942,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3723,
-								3723
+								3144,
+								3144
 							]
 						],
 						"settings":
@@ -898,38 +895,38 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1168.0,
+						"translation.y": 1719.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": ".gitignore",
-					"semi_transient": false,
+					"file": "requirements.txt",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 112,
+						"buffer_size": 322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								63,
-								63
+								321,
+								321
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -957,7 +954,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -987,7 +984,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -1003,8 +1000,8 @@
 						"selection":
 						[
 							[
-								15,
-								15
+								484,
+								484
 							]
 						],
 						"settings":
@@ -1014,10 +1011,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1045,7 +1042,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -1075,7 +1072,7 @@
 						"translation.y": 6.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1105,7 +1102,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1135,7 +1132,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -1165,7 +1162,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
