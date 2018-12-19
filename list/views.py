@@ -1,11 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
-
-
 
 from .forms import ListForm, CommentForm
 from .models import List, Comment

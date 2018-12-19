@@ -47,8 +47,6 @@ INSTALLED_APPS = [
     'django_cleanup',
     'list.apps.ListConfig',
     'accounts.apps.AccountsConfig',
-    'cloudinary',
-    'cloudinary_storage',
 ]
 
 
@@ -155,13 +153,4 @@ if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
 
-
-# cloudinary settings
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'hiwwzpinc',
-    'API_KEY': '796726627932284',
-    'API_SECRET': '8rKTg7B8FWUn4k11aLl6rZX5sDY'
-}
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 

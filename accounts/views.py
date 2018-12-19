@@ -3,11 +3,6 @@ from django.urls import reverse_lazy
 from django.views import generic
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
-
-
 
 from .models import Profile
 from .forms import ProfileForm
