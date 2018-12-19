@@ -531,16 +531,8 @@
 			"file": "listapp/settings.py",
 			"settings":
 			{
-				"buffer_size": 3942,
+				"buffer_size": 3984,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "requirements.txt",
-			"settings":
-			{
-				"buffer_size": 322,
 				"line_ending": "Unix"
 			}
 		},
@@ -568,6 +560,14 @@
 			{
 				"buffer_size": 2470,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "listapp/urls.py",
+			"settings":
+			{
+				"buffer_size": 1165,
 				"line_ending": "Unix"
 			}
 		},
@@ -671,6 +671,8 @@
 	"expanded_folders":
 	[
 		"/Users/itoukouji/django_local/your100lists",
+		"/Users/itoukouji/django_local/your100lists/listapp",
+		"/Users/itoukouji/django_local/your100lists/media",
 		"/Users/itoukouji/django_local/your100lists/static",
 		"/Users/itoukouji/django_local/your100lists/static/js",
 		"/Users/itoukouji/django_local/your100lists/templates"
@@ -840,7 +842,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -877,15 +879,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3942,
+						"buffer_size": 3984,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3638,
-								3638
+								3765,
+								3765
 							]
 						],
 						"settings":
@@ -898,39 +900,11 @@
 						"translation.y": 2026.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "requirements.txt",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 322,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								321,
-								321
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "listapp/wsgi.py",
 					"semi_transient": false,
 					"settings":
@@ -958,7 +932,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "listapp/local_settings.py",
 					"semi_transient": false,
 					"settings":
@@ -988,7 +962,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "templates/registration/login.html",
 					"semi_transient": false,
 					"settings":
@@ -1000,8 +974,8 @@
 						"selection":
 						[
 							[
-								484,
-								484
+								471,
+								471
 							]
 						],
 						"settings":
@@ -1011,10 +985,40 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1.0,
+						"translation.y": 28.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "listapp/urls.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								777,
+								777
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
