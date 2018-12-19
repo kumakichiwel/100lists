@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '0+dj(k_ge6!q#_g$v2ed$1(acm6)kh689_)ft(y1t+3-xu%bt%'
+SECRET_KEY = 'a+dj(k_ge6!q#_i$v2ed$1(ajm6)kh789_)ft(y1t+3-xu%bt%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -153,10 +153,8 @@ except ImportError:
 if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-
-AWS_ACCESS_KEY_ID = 'AKIAIJ3JVYT5SNRMKKEQ'
-AWS_SECRET_ACCESS_KEY = 'j7RKRWMADNud9TapcfGH0t8uuY0V/qyQoh2lwcvt'
-AWS_STORAGE_BUCKET_NAME = 'your100lists'
+    AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
+    AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
+    AWS_STORAGE_BUCKET_NAME = os.environ['AWS_STORAGE_BUCKET_NAME']
