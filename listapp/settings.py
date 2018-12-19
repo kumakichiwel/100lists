@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'django_cleanup',
     'list.apps.ListConfig',
     'accounts.apps.AccountsConfig',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 
