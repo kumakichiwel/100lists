@@ -21,8 +21,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'a+dj(k_ge6!q#_i$v2ed$1(ajm6)kh789_)ft(y1t+3-xu%bt%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -153,6 +151,9 @@ except ImportError:
 if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
+    # SECURITY WARNING: keep the secret key used in production secret!
+    SECRET_KEY = os.environ['SECRET_KEY']
+    
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
     AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
