@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'widget_tweaks',
+    'storages',
     'bootstrap_datepicker_plus',
     'imagekit',
     'django_cleanup',
@@ -154,3 +155,8 @@ if not DEBUG:
     django_heroku.settings(locals())
 
 
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+AWS_ACCESS_KEY_ID = 'AKIAIJ3JVYT5SNRMKKEQ'
+AWS_SECRET_ACCESS_KEY = 'j7RKRWMADNud9TapcfGH0t8uuY0V/qyQoh2lwcvt'
+AWS_STORAGE_BUCKET_NAME = 'your100lists'
