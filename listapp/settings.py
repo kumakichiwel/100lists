@@ -18,6 +18,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = os.environ['SECRET_KEY']
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -151,10 +154,8 @@ except ImportError:
 if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
-    # SECURITY WARNING: keep the secret key used in production secret!
-    SECRET_KEY = os.environ['SECRET_KEY']
     
-    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    #DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
     AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
     AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
@@ -162,7 +163,8 @@ if not DEBUG:
     AWS_S3_OBJECT_PARAMETERS = {
         'CacheControl': 'max-age=86400',  # 1日はそのキャッシュを使う
     }
-    AWS_PRELOAD_METADATA = True
-
+    
     AWS_LOCATION = 'media'
+
+    DEFAULT_FILE_STORAGE = 'mysite.storage_backends.MediaStorage'
 
