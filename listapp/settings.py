@@ -166,5 +166,5 @@ if not DEBUG:
     
     AWS_LOCATION = 'media'
 
-    DEFAULT_FILE_STORAGE = 'mysite.storage_backends.MediaStorage'
+    DEFAULT_FILE_STORAGE = 'listapp.storage_backends.MediaStorage'
 
