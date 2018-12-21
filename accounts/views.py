@@ -43,14 +43,20 @@ def update(request, pk):
         print("in 4")
         if form.is_valid():
             print("in 5")
+            print(form.cleaned_data['name'])
             profile.name = form.cleaned_data['name']
             print("in 5-1")
+            print(form.cleaned_data['profile_image'])
             profile.profile_image = form.cleaned_data['profile_image']
             print("in 5-2")
+            print(form.cleaned_data['profile_content'])
             profile.profile_content = form.cleaned_data['profile_content']
             print("in 5-3")
+            print(form.cleaned_data['twitter'])
             profile.twitter = form.cleaned_data['twitter']
             print("in 6")
+            print("+++++ profile +++++")
+            print(profile)
             profile.save()
             print("in 7")
             return redirect('accounts:index')
