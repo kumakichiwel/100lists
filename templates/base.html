@@ -35,7 +35,7 @@
                         {% endif %}
                         <li><a href="/others_list/">Other's Lists</a></li>
                         {% if user.is_authenticated %}
-                        <li><a href="/accounts/">profile</a></li>
+                        <li><a href="/accounts/">Profile</a></li>
                         <li><a href="{% url 'logout' %}" class="logout">Logout</a></li>
                         {% else %}
                         <li><a href="{% url 'accounts:signup' %}" class="signup">Sign up</a></li>
