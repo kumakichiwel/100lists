@@ -32,33 +32,18 @@ def create(request):
         profile.save()
     return redirect('list:index')
 
+
 @login_required
 def update(request, pk):
-    print("in 1")
     profile = get_object_or_404(Profile, id=pk)
-    print("in 2")
     if request.method == "POST":
-        print("in 3")
         form = ProfileForm(request.POST, request.FILES)
-        print("in 4")
         if form.is_valid():
-            print("in 5")
-            print(form.cleaned_data['name'])
             profile.name = form.cleaned_data['name']
-            print("in 5-1")
-            print(form.cleaned_data['profile_image'])
             profile.profile_image = form.cleaned_data['profile_image']
-            print("in 5-2")
-            print(form.cleaned_data['profile_content'])
             profile.profile_content = form.cleaned_data['profile_content']
-            print("in 5-3")
-            print(form.cleaned_data['twitter'])
             profile.twitter = form.cleaned_data['twitter']
-            print("in 6")
-            print("+++++ profile +++++")
-            print(profile)
             profile.save()
-            print("in 7")
             return redirect('accounts:index')
     else:
         form = ProfileForm(
@@ -76,4 +61,3 @@ class SignUpView(generic.CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('login')
     template_name = 'accounts/signup.html'
-

@@ -40,7 +40,7 @@ class List(models.Model):
     
     image_edit = ImageSpecField(
         source="image",
-        processors=[ResizeToFill(537, 250)],
+        processors=[ResizeToFill(560, 250)],
         format='JPEG'
     )
 
