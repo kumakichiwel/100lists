@@ -14,4 +14,5 @@ urlpatterns = [
     path('<int:pk>/status_update/', views.status_update, name='status_update'),
     path('share_open/', views.share_open, name='share_open'),
     path('share_close/', views.share_close, name='share_close'),
+    path('googlef0f289258061b898.html', views.GoogleSearchConsoleView.as_view(), name='GoogleSearchConsole'),
 ]

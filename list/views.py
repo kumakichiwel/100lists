@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
+from django.views.generic import TemplateView
 
 from .forms import ListForm, CommentForm
 from .models import List, Comment
@@ -108,3 +109,7 @@ def share_close(request):
         v.share = 2
         v.save()
     return redirect('accounts:index')
+
+
+class GoogleSearchConsoleView(TemplateView):
+    template_name = 'googlef0f289258061b898.html'
