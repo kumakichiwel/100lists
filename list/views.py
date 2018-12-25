@@ -48,7 +48,7 @@ def update(request, pk):
             list.share = form.cleaned_data['share']
             list.image = form.cleaned_data['image']
             list.save()
-            return redirect('list:index')
+            return redirect('list:detail', pk=pk)
     else:
         form = ListForm(
             initial={
