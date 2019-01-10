@@ -9,7 +9,7 @@ from .models import List, Comment
 
 @login_required
 def index(request):
-    user_lists = List.objects.filter(user__id=request.user.id).order_by('id')
+    user_lists = List.objects.filter(user__id=request.user.id).order_by('-created_at')
     return render(request, 'list/index.html', {'user_lists':user_lists})
  
  
