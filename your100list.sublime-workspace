@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"p",
+				"p"
+			],
+			[
+				"theta",
+				"theta"
+			],
+			[
+				"y",
+				"y"
+			],
+			[
+				"X",
+				"X_test"
+			],
+			[
 				"ohlc",
 				"ohlc"
 			],
@@ -54,10 +70,6 @@
 			[
 				"pl",
 				"pl"
-			],
-			[
-				"p",
-				"profit_factor"
 			],
 			[
 				"sc",
@@ -484,10 +496,6 @@
 				"get_kabu_data"
 			],
 			[
-				"y",
-				"y"
-			],
-			[
 				"file",
 				"filename"
 			],
@@ -506,50 +514,16 @@
 			[
 				"fom",
 				"form-control"
-			],
-			[
-				"task",
-				"task"
-			],
-			[
-				"create",
-				"created_tasks"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Procfile",
-			"settings":
-			{
-				"buffer_size": 39,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "listapp/settings.py",
-			"settings":
-			{
-				"buffer_size": 4181,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "listapp/local_settings.py",
-			"settings":
-			{
-				"buffer_size": 3867,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "list/views.py",
 			"settings":
 			{
-				"buffer_size": 3399,
+				"buffer_size": 3582,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -558,7 +532,7 @@
 			"file": "accounts/views.py",
 			"settings":
 			{
-				"buffer_size": 2085,
+				"buffer_size": 2084,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -576,16 +550,16 @@
 			"file": "listapp/urls.py",
 			"settings":
 			{
-				"buffer_size": 1298,
+				"buffer_size": 1190,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": ".gitignore",
+			"file": "list/urls.py",
 			"settings":
 			{
-				"buffer_size": 94,
+				"buffer_size": 910,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -603,7 +577,7 @@
 			"file": "templates/base.html",
 			"settings":
 			{
-				"buffer_size": 3199,
+				"buffer_size": 3205,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -631,6 +605,24 @@
 			"settings":
 			{
 				"buffer_size": 3571,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/list/detail.html",
+			"settings":
+			{
+				"buffer_size": 4901,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "list/models.py",
+			"settings":
+			{
+				"buffer_size": 1499,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -690,21 +682,59 @@
 	"expanded_folders":
 	[
 		"/Users/itoukouji/django_local/your100lists",
-		"/Users/itoukouji/django_local/your100lists/accounts",
-		"/Users/itoukouji/django_local/your100lists/list",
 		"/Users/itoukouji/django_local/your100lists/listapp",
-		"/Users/itoukouji/django_local/your100lists/media",
-		"/Users/itoukouji/django_local/your100lists/static",
-		"/Users/itoukouji/django_local/your100lists/staticfiles",
 		"/Users/itoukouji/django_local/your100lists/templates",
-		"/Users/itoukouji/django_local/your100lists/templates/accounts"
+		"/Users/itoukouji/django_local/your100lists/templates/accounts",
+		"/Users/itoukouji/django_local/your100lists/templates/list",
+		"/Users/itoukouji/django_local/your100lists/templates/registration"
 	],
 	"file_history":
 	[
+		"/Users/itoukouji/Desktop/machine-learning-ex5/ex5/linearRegCostFunction.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex5/ex5/learningCurve.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex5/ex5/polyFeatures.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex5/ex5/validationCurve.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex5/ex5/ex5.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex4/ex4/ex4.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex3/ex3/lrCostFunction.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex2/ex2/ex2.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex4/ex4/randInitializeWeights.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex4/ex4/sigmoidGradient.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex5/ex5/trainLinearReg.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex5/ex5/featureNormalize.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex4/ex4/nnCostFunction.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex2/ex2/costFunction.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex2/ex2/costFunctionReg.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex3/ex3/ex3_nn.m",
+		"/Users/itoukouji/django_local/your100lists/staticfiles/admin/js/vendor/jquery/jquery.6a07da9fae93.js",
+		"/Users/itoukouji/Desktop/machine-learning-ex3/ex3/oneVsAll.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex3/ex3/predict.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex3/ex3/predictOneVsAll.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex3/ex3/ex3.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex2/ex2/predict.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex3/ex3/sigmoid.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex3/ex3/displayData.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex2/ex2/ex2_reg.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex2/ex2/sigmoid.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex2/ex2/plotData.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex1/ex1/computeCostMulti.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex1/ex1/ex1_multi.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex1/ex1/gradientDescentMulti.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex1/ex1/computeCost.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex1/ex1/gradientDescent.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex1/ex1/normalEqn.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex1/ex1/featureNormalize.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex1/ex1/plotData.m",
+		"/Users/itoukouji/Desktop/machine-learning-ex1/ex1/warmUpExercise.m",
+		"/Users/itoukouji/django_local/your100lists/listapp/settings.py",
+		"/Users/itoukouji/django_local/your100lists/listapp/storage_backends.py",
+		"/Users/itoukouji/django_local/your100lists/listapp/local_settings.py",
+		"/Users/itoukouji/django_local/your100lists/accounts/urls.py",
+		"/Users/itoukouji/django_local/your100lists/.gitignore",
+		"/Users/itoukouji/django_local/your100lists/Procfile",
 		"/Users/itoukouji/django_local/your100lists/templates/accounts/index.html",
 		"/Users/itoukouji/django_local/your100lists/listapp/wsgi.py",
 		"/Users/itoukouji/django_local/your100lists/static/css/bootstrap.min.css",
-		"/Users/itoukouji/django_local/your100lists/.gitignore",
 		"/Users/itoukouji/django_local/algos_1/templates/base.html",
 		"/Users/itoukouji/django_local/algos_1/stock/models.py",
 		"/Users/itoukouji/django_local/algos_1/tradesys/models.py",
@@ -787,48 +817,7 @@
 		"/Users/itoukouji/django_local/djangogirls/templates/registration/logged_out.html",
 		"/Users/itoukouji/django_local/djangogirls/templates/registration/login.html",
 		"/Users/itoukouji/django_local/djangogirls/templates/base.html",
-		"/Users/itoukouji/django_local/djangogirls/blog/apps.py",
-		"/Users/itoukouji/django_local/djangogirls/mysite/settings.py",
-		"/Users/itoukouji/django_local/algos/algos001/admin.py",
-		"/Users/itoukouji/django_local/algos/algos001/templates/csv.html",
-		"/Users/itoukouji/django_local/algos/algos001/templates/import_files.html",
-		"/Users/itoukouji/django_local/algos/algos001/forms.py",
-		"/Users/itoukouji/django_local/algos/algos001/views.py",
-		"/Users/itoukouji/django_local/algos/algos001/urls.py",
-		"/Users/itoukouji/django_local/algos/algos/urls.py",
-		"/Users/itoukouji/django_local/algos/test1.csv",
-		"/Users/itoukouji/django_local/algos/test.csv",
-		"/Users/itoukouji/django_local/algos/algos001/models.py",
-		"/Users/itoukouji/django_local/algos/algos/local_settings.py",
-		"/Users/itoukouji/django_local/algos/algos/settings.py",
-		"/Users/itoukouji/django_local/algos/.gitignore",
-		"/Users/itoukouji/Downloads/1301_1985.csv",
-		"/Users/itoukouji/Downloads/1301_1986.csv",
-		"/Users/itoukouji/Downloads/1301_1983.csv",
-		"/Users/itoukouji/django_local/algos/algos001/apps.py",
-		"/Users/itoukouji/django_local/algos/algos001/templates/index.html",
-		"/Users/itoukouji/django_local/algos/algos001/migrations/0001_initial.py",
-		"/Users/itoukouji/django_local/algos_base/.gitignore",
-		"/Users/itoukouji/django_local/algos_base/algos_base/settings.py",
-		"/Users/itoukouji/django_local/algos_base/algos_base/urls.py",
-		"/Users/itoukouji/django_local/algos_base/algos001/urls.py",
-		"/Users/itoukouji/django_local/algos_base/algos001/views.py",
-		"/Users/itoukouji/django_local/algos/algos001/algos001/settings.py",
-		"/Users/itoukouji/django_local/algos/algos001/polls/admin.py",
-		"/Users/itoukouji/django_local/algos/algos001/algos001/urls.py",
-		"/Users/itoukouji/django_local/algos/algos001/polls/templates/polls/index.html",
-		"/Users/itoukouji/django_local/algos/algos001/polls/models.py",
-		"/Users/itoukouji/django_local/algos/algos001/polls/urls.py",
-		"/Users/itoukouji/django_local/algos/algos001/polls/templates/polls/detail.html",
-		"/Users/itoukouji/django_local/algos/algos001/polls/templates/polls/results.html",
-		"/Users/itoukouji/django_local/algos/algos001/polls/static/polls/style.css",
-		"/Users/itoukouji/django_local/algos/algos001/templates/admin/base.html",
-		"/Users/itoukouji/django_local/algos/algos001/polls/tests.py",
-		"/Users/itoukouji/django_local/algos/algos001/polls/views.py",
-		"/Users/itoukouji/pyapptest/gittest/test001.py",
-		"/Users/itoukouji/pyapptest/templates/entry.html",
-		"/Users/itoukouji/pyapptest/templates/base.html",
-		"/Users/itoukouji/pyapptest/tmpl_decorator.py"
+		"/Users/itoukouji/django_local/djangogirls/blog/apps.py"
 	],
 	"find":
 	{
@@ -846,6 +835,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"gradientDescentMulti",
+			"computeCostMulti",
+			"print",
 			"glyphicons-halflings-regular.eot"
 		],
 		"highlight": true,
@@ -864,52 +856,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Procfile",
+					"file": "list/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 39,
+						"buffer_size": 3582,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "listapp/settings.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4181,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								762,
-								762
+								364,
+								364
 							]
 						],
 						"settings":
@@ -919,27 +883,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 114.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "listapp/local_settings.py",
+					"buffer": 1,
+					"file": "accounts/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3867,
+						"buffer_size": 2084,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3865,
-								3648
+								2083,
+								2083
 							]
 						],
 						"settings":
@@ -949,27 +913,87 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1924.0,
+						"translation.y": 496.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "list/views.py",
+					"buffer": 2,
+					"file": "templates/registration/login.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3399,
+						"buffer_size": 2547,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								159,
-								159
+								939,
+								939
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 479.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "listapp/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1190,
+								1190
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "list/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 910,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								802,
+								802
 							]
 						],
 						"settings":
@@ -986,125 +1010,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "accounts/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2085,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								248,
-								248
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 69.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
 					"buffer": 5,
-					"file": "templates/registration/login.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2547,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								92,
-								92
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "listapp/urls.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1298,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								607,
-								607
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 10.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 94,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11,
-								11
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
 					"file": "static/css/login.css",
 					"semi_transient": false,
 					"settings":
@@ -1127,27 +1033,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 6,
 					"file": "templates/base.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3199,
+						"buffer_size": 3205,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								507,
-								507
+								1863,
+								1863
 							]
 						],
 						"settings":
@@ -1157,14 +1063,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 314.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 7,
 					"file": "templates/list/index.html",
 					"semi_transient": false,
 					"settings":
@@ -1190,11 +1096,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 8,
 					"file": "templates/list/others.html",
 					"semi_transient": false,
 					"settings":
@@ -1220,11 +1126,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 9,
 					"file": "templates/list/update.html",
 					"semi_transient": false,
 					"settings":
@@ -1236,8 +1142,8 @@
 						"selection":
 						[
 							[
-								70,
-								70
+								440,
+								440
 							]
 						],
 						"settings":
@@ -1250,7 +1156,67 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "templates/list/detail.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1129,
+								1129
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 158.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "list/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1499,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								617,
+								607
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

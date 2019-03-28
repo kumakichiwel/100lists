@@ -20,7 +20,11 @@
             {% for v in user_lists %}
                 <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 list_heading2">
                     <a href="{% url 'list:detail' pk=v.id %}">
-                        {{ v.title }}<div class="hidden-sm hidden-xs list_created_at">登録日：{{ v.created_at }}</div>
+                        {% if v.status == True %}
+                            <i class="fas fa-crown awe_crown"></i>{{ v.title }}<div class="hidden-sm hidden-xs list_created_at">登録日：{{ v.created_at }}</div>
+                        {% else %}
+                            {{ v.title }}<div class="hidden-sm hidden-xs list_created_at">登録日：{{ v.created_at }}</div>
+                        {% endif %}
                     </a>
                 </div>
             {% empty %}
