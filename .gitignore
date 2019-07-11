@@ -6,3 +6,6 @@ db.sqlite3
 *.sublime-project
 *.sublime-workspace
 media/
+your100list.sublime-project
+your100list.sublime-workspace
+
